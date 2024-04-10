@@ -17,27 +17,26 @@
 body {margin: 0px;}
 
 header {display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;}
+    justify-content: space-between;}
 
 .header-logo img{
-    width: 61px;
     height: 19px;
-    margin-top: 30px;
+    padding:30px 0px;
 }
 
 
-header nav ul {
+header nav ul {margin: 0px;
         list-style-type: none;  
         display: flex;}
 
-header  a:hover{
+header li { padding-top: 20px;}
+
+header  li:hover{
         color:#0065FC;
         }
         
-header a:hover {
+header li:hover {
             border-top: #0065FC solid;
-            padding-top: 22px;
         }
 header nav ul li {
          margin-right: 50px;
@@ -50,18 +49,17 @@ body {display: flex;
     justify-content: center;}
 
 .titre {padding: 0px;
-        margin: 0px;}
+        margin: 35px 0px;}
 
-.titre h2 {font-size: 22px;}
+.titre h2 {font-size: 22px;
+          margin: 0px;}
 
-.titre .description {margin-top: -15px;
+.titre .description {margin: 8px 0px;
             font-size: 16px;}
 
 form { display: flex;
     align-items: center;
-       margin-top: 30px;
-       margin-bottom: 10px;
-        padding: 10px;}
+       margin: 35px 0px;}
 
 .black-icon {color: black;
 padding: 15px;
@@ -95,15 +93,17 @@ form input::placeholder {color: black;}
     align-items: center;
     font-weight: bold;}
 
-.filtre h3 {font-size: 18px;}
+.filtre h3 {font-size: 18px;
+           margin: 0px;}
 
 .filtre ul{list-style-type: none;
     display: flex;
-    flex-direction: row;}
+    flex-direction: row;
+    margin: 0px;}
 
 .filtre ul li{border:2px #d9d9d9 solid;
     border-radius: 25px;
-    padding:10px 19px;
+    padding:15px 19px;
     font-size: 17px;
     margin-right: 15px;
     }
@@ -113,14 +113,14 @@ form input::placeholder {color: black;}
 
 .info{display: flex;
       align-items: center;
-      margin-bottom: 30px;}
+      margin: 35px 0px;}
 
 .info i {display: flex;
         justify-content: center;
         align-items: center;
         border: 1px #d9d9d9 solid;
         border-radius: 50% 50% 50% 50% / 50% 50% 50% 50% ;
-        width: 24px;
+        width: 2%;
         height: 24px;
         margin-right: 10px;
         font-size:14px;}
@@ -280,7 +280,7 @@ a {
 
 /****** activités ***********/
 
-.activites {margin-bottom: 30px;
+.activites {margin: 30px 0px;
     padding: 30px;
     box-sizing: border-box;}
 
@@ -342,7 +342,7 @@ footer {display: flex;
         flex-direction: column;
         align-items: flex-start;}
 
-    .filtre h3{ margin-bottom: 0}
+    .filtre h3{ margin-bottom: 20px}
 
     .filtre ul{list-style-type: none;
             width: 100%;
@@ -357,6 +357,8 @@ footer {display: flex;
             font-size: 16px;}
     
     .form-button .icon{display: none;}
+
+    .info i {width: 2.5%;}
 
     .hebergements-and-populaires {
         flex-direction: column;
@@ -408,8 +410,7 @@ footer {display: flex;
     }
 
     header {display: flex;
-        flex-direction: column;
-        margin-bottom: 30px;}
+        flex-direction: column;}
     
     .header-logo{display: flex;
         justify-content: center;
@@ -422,22 +423,22 @@ footer {display: flex;
             align-items: center;
             padding: 0;}
     
-    header  a:hover{
+    header  li:hover{
             color:#0065FC;
             }
             
-    header a:hover {
+    header li:hover {
                 border-top: none;
                 border-bottom: #0065FC solid;
-                width: 100%;
+                width: 50%;
             }
 
-    header a {display: flex;
+    header li {display: flex;
         justify-content: center;
         border-bottom: #F2F2F2 solid;
         padding: 0px;
         padding-bottom: 15px;
-        width: 100%;}
+        width: 50%;}
 
     header nav ul li {
              margin-right: 0px;
@@ -459,7 +460,9 @@ form {display: flex;
 .form-button{background-color: #0065FC;
     border:none;
     border-radius: 15px 15px 15px 15px;
-    padding: 15px;}
+    padding: 15px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
 
 .form-button .icon {display: flex}
 
@@ -474,7 +477,10 @@ form {display: flex;
     margin: 0;
     margin-bottom: 20px;}
 
-.info {padding: 20px;}
+.info {padding: 0px 20px;
+       margin: 0px;}
+
+.info i {width: 10%;}
 
 .info p{ margin: 0;}
 
@@ -487,7 +493,8 @@ form {display: flex;
             flex-direction: column-reverse;
             justify-content: center;}
 
-#hebergements {background-color: #ffffff;}
+#hebergements {margin: 0px;
+    background-color: #ffffff;}
 
 .hebergements-cards{display: flex;
     flex-direction: column;
@@ -496,6 +503,8 @@ form {display: flex;
 .hebergements-cards a{width: 100%;}
 
 .hebergements-cards img{width: 100%;}
+
+.hebergements h3 {margin-top: 15px;}
 
 .populaires{width: 100%;}
 
